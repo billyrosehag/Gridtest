@@ -1,0 +1,257 @@
+
+
+body{
+
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(44, 37, 37);
+    max-width:1024px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.headwrapper li {
+    display: inline-grid;
+    align-items: center;
+    width: 30%;
+}
+img{
+    width: 50%;
+    
+}
+
+a {
+    text-decoration: none;
+    color: rgb(228, 228, 228);
+    border-left: 1px solid white;
+    margin: 1px;
+    transition: 100ms;
+    
+
+    }
+
+    a:hover{
+        transition: 500ms;
+        font-size: 1.2em;
+      
+    }
+.headwrapper li:nth-of-type(3){
+    border-right: 1px solid white;
+
+}
+
+article{
+    padding: .5em;
+}
+
+.item5  div {
+    text-align: left;
+    padding: 1em;
+}
+
+.item1 {
+    grid-area: header;
+    height:5em;
+    
+
+}
+.item3 {
+    grid-area: main;
+    padding:1em;
+    display:grid;
+    row-gap: 1em;
+    column-gap: 1em;
+    grid-template-areas: 'first first'
+                        'second third';
+    align-items: center;
+    justify-items: center;
+}
+.item4 {
+    grid-area: right;
+    width:100%;
+    display:inline-block;
+}
+.item5 {
+    grid-area: footer;
+}
+
+.grid-container {
+    
+    display:grid;
+    grid-template-areas:
+    'header header header header header header'
+    'main main main main right right'
+    'footer footer footer footer footer footer';
+   
+    grid-gap:1px;
+    background-color: rgb(206, 191, 191);
+    padding: 1px;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;  
+
+}
+
+.headwrapper h2{
+    grid-area: logo;
+    margin:0;
+    
+}
+.headwrapper ul, #login-ref{
+    grid-area: nav;
+    list-style: none;
+    font-weight: bold;
+    
+}
+
+.headwrapper div {
+    grid-area: space;
+
+}
+#login-ref{
+    grid-area: login;
+    display: inline-block;
+
+}
+
+.headwrapper {
+    
+    display: grid;
+    grid-template-areas: 'logo logo nav nav nav space space login';
+    gap: 10px;
+    align-items: center;
+    justify-content: stretch;
+    width:100%;
+    height:100%;
+    color: #fff;
+    background-color: rgb(100, 100, 100);
+ 
+    
+}
+
+.main-header{
+    grid-area: first;
+    background-color: rgb(167, 162, 162);
+}
+
+.first-article{
+    grid-area: second;
+    background-color: rgb(230, 217, 218);
+    height: 100%;
+
+}
+.second-article{
+    grid-area: third;
+    background-color: rgb(66, 62, 65);
+    color:#fff;
+    height:100%;
+    
+}
+
+.item4 > ul {
+    padding:2em;
+}
+
+ol li:nth-child(1){
+    color:rgb(53, 54, 58);
+}
+ol li:nth-child(2){
+    color:rgb(206, 74, 74);
+}
+ol li:nth-child(3){
+    color:rgb(64, 145, 64);
+}
+
+main {
+padding:1em;
+width: 100%;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+display: grid;
+grid-template-areas: 'login login login'
+                    'user user user'
+                    'password password password'
+                    'button button button';
+
+gap:10px;
+align-items: center;
+justify-content: center;
+
+}
+main h2 {
+    grid-area: login;
+    text-transform: uppercase;
+    margin-bottom: 0;
+
+    
+}
+
+form{    
+    padding:1em;
+    display: inline-block;
+    background-color: lightblue;
+    border: 2px solid rgb(98, 98, 116);
+    border-radius: 10px;
+}
+
+label {
+    display: inline-block;
+    width:72px;
+    margin-right: 1em;
+}
+
+.User{
+    grid-area: user;
+}
+
+.Pass{
+    grid-area: password;
+    margin-bottom: .5em;
+}
+.User, .Pass {
+    width:20em;
+}
+
+
+#password, #username {
+    width:68%;
+    display:inline-block;
+    padding:3px;
+    background-color: lightgrey;
+}
+
+#password:focus, #username:focus{
+    background-color: #FFF;
+    transition: 1000ms;
+}
+
+.button{
+    width: 100%;
+    grid-area:button;
+    border-radius: 5px;
+    text-align: center;
+    color:rgb(235, 235, 235);
+    font-weight: bolder;
+    font-size: large;   
+
+}
+.button:nth-of-type(1){
+    background-color: rgb(97, 145, 95);
+    margin-bottom: 2px;
+}
+.button:nth-of-type(1):hover{
+    background-color: rgb(126, 209, 124);
+    transition: 500ms;
+
+}
+
+.button:nth-of-type(2){
+    background-color: rgb(117, 67, 67);
+    margin-bottom: 2px;
+}
+.button:nth-of-type(2):hover{
+    background-color: rgb(192, 75, 75);
+    transition: 500ms;
+}
